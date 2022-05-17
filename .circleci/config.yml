@@ -44,18 +44,18 @@ jobs:
           name: Deploy Front-End 
           command: |
             npm run frontend:deploy
-      - run: 
-          name: Pass Environment Variables
-          command: |
-            eb setenv $PORT |
-            eb setenv $POSTGRES_HOST |
-            eb setenv $POSTGRES_USERNAME |
-            eb setenv $POSTGRES_PASSWORD |
-            eb setenv $POSTGRES_DB |
-            eb setenv $DB_PORT |
-            eb setenv $AWS_BUCKET |
-            eb setenv $JWT_SECRET |
-            eb setenv $URL
+      # - run: 
+      #     name: Pass Environment Variables
+      #     command: |
+      #       eb setenv $PORT |
+      #       eb setenv $POSTGRES_HOST |
+      #       eb setenv $POSTGRES_USERNAME |
+      #       eb setenv $POSTGRES_PASSWORD |
+      #       eb setenv $POSTGRES_DB |
+      #       eb setenv $DB_PORT |
+      #       eb setenv $AWS_BUCKET |
+      #       eb setenv $JWT_SECRET |
+      #       eb setenv $URL
       - run: 
           name: Backend Deploy
           command: |
