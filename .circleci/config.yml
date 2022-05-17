@@ -12,10 +12,10 @@ jobs:
     docker:
       - image: "cimg/base:stable"
 
-    filters:
-      branches:
-        only:
-          - main
+    # filters:
+    #   branches:
+    #     only:
+    #       - main
 
     steps:
       - node/install:
