@@ -10,7 +10,7 @@ jobs:
   build:
     filters:
       branches:
-        only: main
+        only: master 
 
     docker:
       - image: "cimg/base:stable"
